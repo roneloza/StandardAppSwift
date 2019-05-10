@@ -6,8 +6,15 @@
 //  Copyright © 2019 Developer Rone Loza. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class NetworkSessionClient: NSObject {
+class NetworkSessionClient {
 
+    func GET<T: NetworkResponseCodable, E: NetworkError>(request: NetworkRequestMessage, completion: @escaping (Result<T?, E>) -> ()) {
+        
+    }
+    
+    func POST<T: NetworkResponseCodable, E: NetworkError>(request: NetworkRequestMessage, completion: @escaping (Result<T?, E>) -> ()) {
+        
+    }
 }

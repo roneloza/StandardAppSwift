@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.028375">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: cocoapods" time="11.381726">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: Switch to ios increment_build_and_version_numbers lane" time="0.002377">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: get_info_plist_value" time="0.007193">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: get_build_number" time="0.889003">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: increment_build_number" time="2.600303">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: get_build_number" time="0.821998">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: get_version_number" time="0.470064">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: set_info_plist_value" time="0.017469">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: Switch to ios archive_debug lane" time="0.007604">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: build_app" time="133.931668">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: Switch to ios refresh_dsyms lane" time="0.021579">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: download_dsyms" time="3.448856">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: upload_symbols_to_crashlytics" time="0.045413">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

@@ -1,0 +1,110 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+#Globals
+prefix_dir = "./"
+project_name = "StandardApp"
+project_dir = "#{prefix_dir}#{project_name}/"
+project_scheme_debug = "StandardApp"
+project_target_debug = "StandardApp"
+project_scheme_release = "StandardApp"
+project_target_release = "StandardApp"
+project_configuration_debug = "Debug"
+project_configuration_release = "Release"
+project_output_name_debug = "#{project_scheme_debug}_#{project_configuration_debug}"
+project_output_name_release = "#{project_scheme_release}_#{project_configuration_release}"
+project_bundle_identifier = "com.mambo.distributionTest"
+xcodeproj = "#{prefix_dir}#{project_name}.xcodeproj"
+workspace = "#{prefix_dir}#{project_name}.xcworkspace"
+build_dir = "./build"
+project_info_plist = "#{project_name}/Info.plist"
+git_url = "git@github.com:roneloza/StandardAppSwift.git"
+
+#Crashlytics
+crashlytics_api_token = "aaae02e59450e7b181028018790517df300a907e"
+crashlytics_build_secret = "256141661a7717eacee1649d247a28cc31ac6d8c55b9fb291a46caf00201fab4"
+crashlytics_emails = ["rone.loza@mambo.pe", "rone.loza@gmail.com", "rone.loza.aliaga@gmail.com"]
+
+testflight_whats_new = "whats new"
+
+#Body
+
+default_platform(:ios)
+
+platform :ios do
+    before_all do
+        #cocoapods
+        cocoapods(use_bundle_exec: false)
+        #ensure_git_status_clean
+        
+    end
+    
+    desc "Versioning number"
+    lane :increment_build_and_version_numbers do
+        
+        checkNewVersionStart = get_info_plist_value(path: "#{project_info_plist}", key: "CFBundleVersion")
+        if checkNewVersionStart == "0"
+            increment_build_number(
+                                   build_number: "0"
+                                   )
+        end
+        
+        formerNumber = get_build_number
+        
+        increment_build_number
+        build_number = get_build_number
+        version = get_version_number
+        
+        formerVersion = "#{version}-b#{formerNumber}"
+        commitVersion = "#{version}-b#{build_number}"
+        
+        set_info_plist_value(path: "#{project_info_plist}", key: "CFBundleVersion", value: build_number)
+    end
+    
+    desc "Archiving Debug"
+    lane :archive_debug do
+        Dir.mkdir("../#{build_dir}") unless File.exists?("../#{build_dir}")
+        
+        build_app(
+                  scheme: "#{project_scheme_debug}",
+                  output_name: "#{project_output_name_debug}",
+                  workspace: "#{workspace}",
+                  configuration: "#{project_configuration_debug}",
+                  export_method: "development",
+                  output_directory: "#{build_dir}",
+                  clean: true,
+                  include_bitcode: false
+                  )
+    end
+    
+    desc "Refreshing dSYM"
+    lane :refresh_dsyms do
+        
+        download_dsyms                  # Download dSYM files from iTC
+        upload_symbols_to_crashlytics   # Upload them to Crashlytics
+        #clean_build_artifacts           # Delete the local dSYM files
+    end
+    
+    desc "Delivering App"
+    lane :delivery_app do
+        increment_build_and_version_numbers
+        archive_debug
+        #archive_release
+        refresh_dsyms
+        #commit_beta_version
+        #upload_to_crashlytics
+        
+    end
+end

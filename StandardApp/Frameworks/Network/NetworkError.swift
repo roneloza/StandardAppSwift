@@ -6,8 +6,17 @@
 //  Copyright © 2019 Developer Rone Loza. All rights reserved.
 //
 
-import UIKit
+import RxRetroSwift
+import RxSwift
 
-class NetworkError: NSObject {
-
+class NetworkError: DecodableError, Error {
+    
+    var errorDetail: String?
+    var errorCode:Int?
+    var message:String?
+    var details:[String:String]?
+    
+    required init() {
+        
+    }
 }

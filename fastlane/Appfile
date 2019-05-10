@@ -1,0 +1,6 @@
+app_identifier("com.mambo.distributionTest") # The bundle identifier of your app
+apple_id("rone.loza@mambo.pe") # Your Apple email address
+team_id "2H7JJNVPU3" # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

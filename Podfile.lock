@@ -1,0 +1,63 @@
+PODS:
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - Fabric (1.9.0)
+  - GirdersSwift (0.4.2):
+    - KeychainAccess (= 3.1.1)
+    - PromiseKit (= 6.4.0)
+    - SwiftyBeaver (= 1.5.2)
+  - KeychainAccess (3.1.1)
+  - PromiseKit (6.4.0):
+    - PromiseKit/CorePromise (= 6.4.0)
+    - PromiseKit/Foundation (= 6.4.0)
+    - PromiseKit/UIKit (= 6.4.0)
+  - PromiseKit/CorePromise (6.4.0)
+  - PromiseKit/Foundation (6.4.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.4.0):
+    - PromiseKit/CorePromise
+  - RxAtomic (4.4.2)
+  - RxCocoa (4.4.2):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxRetroSwift (2.3.2):
+    - RxCocoa (~> 4.1)
+    - RxSwift (~> 4.1)
+  - RxSwift (4.4.2):
+    - RxAtomic (>= 4.4.2, ~> 4.4)
+  - SwiftyBeaver (1.5.2)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - GirdersSwift
+  - RxRetroSwift
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
+    - GirdersSwift
+    - KeychainAccess
+    - PromiseKit
+    - RxAtomic
+    - RxCocoa
+    - RxRetroSwift
+    - RxSwift
+    - SwiftyBeaver
+
+SPEC CHECKSUMS:
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  GirdersSwift: 18cc7d041ba6a756926bd29eaac49fb2807b4bc7
+  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+  PromiseKit: ae3616f45d7bb9bf4ff1e91abc9b7a8c48a340e0
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
+  RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
+  RxRetroSwift: f0269fab277a967a58ec42e5bc12ace789208e87
+  RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
+  SwiftyBeaver: 85daaaa2b3ae6e31b7b55c99430e8b91dac088af
+
+PODFILE CHECKSUM: 84bdbc7c18c11c5dbf950f0350645eb53f9a2881
+
+COCOAPODS: 1.5.2

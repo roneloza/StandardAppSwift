@@ -1,10 +1,10 @@
-git_url("git@bitbucket.org:compec/ahora_ios.git")
+git_url("git@github.com:roneloza/StandardAppSwift.git")
 
 storage_mode("git")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 
-app_identifier 'dev.mambo.sura.Ahora'
+app_identifier "com.mambo.distributionTest"
 username "rone.loza@mambo.pe" #This will be the git username
 shallow_clone true
 force_for_new_devices true

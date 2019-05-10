@@ -6,8 +6,8 @@
 //  Copyright © 2019 Developer Rone Loza. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class NetworkResponseCodable: NSObject {
-
+protocol NetworkResponseCodable: Codable {
+    
 }

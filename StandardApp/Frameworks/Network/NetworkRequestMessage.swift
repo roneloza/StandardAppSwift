@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum NetworkRequestRawContentType {
+    
+    case PLAIN
+    case JSON
+}
+
 enum NetworkRequestMethod {
     
     case GET
@@ -16,6 +22,13 @@ enum NetworkRequestMethod {
     case PATCH
     case DELETE
     case HEAD
+}
+
+enum NetworkRequestBodyEncode {
+    
+    case Raw
+    case FormData
+    case FormURLEncoded
 }
 
 protocol NetworkRequestMessage: class {
@@ -27,7 +40,82 @@ protocol NetworkRequestMessage: class {
     var headers: [String: String]? { get }
     var parameters: [String: Any]? { get }
     var authHeaders: [String: String]? { get }
-    var mergeHeaders: [String: String]? { get }
-    var bodyEncode: NetworkBodyEncode { get }
-    var contentType: NetworkContentType { get }
+    var bodyEncode: NetworkRequestBodyEncode { get }
+    var contentType: NetworkRequestRawContentType { get }
+}
+
+extension NetworkRequestMessage {
+    
+    var path: String? {
+        
+        get {
+            
+            return nil
+        }
+    }
+    
+    var url: URL? {
+        
+        get {
+            
+            return nil
+        }
+    }
+    
+    var baseURL: String? {
+        
+        get {
+            
+            return nil
+        }
+    }
+    
+    var method: NetworkRequestMethod {
+        
+        get {
+            
+            return .GET
+        }
+    }
+    
+    var headers: [String: String]? {
+        
+        get {
+            
+            return nil
+        }
+    }
+    
+    var parameters: [String: Any]? {
+        
+        get {
+            
+            return nil
+        }
+    }
+    
+    var authHeaders: [String: String]? {
+        
+        get {
+            
+            return nil
+        }
+    }
+    
+    var bodyEncode: NetworkRequestBodyEncode {
+        
+        get {
+            
+            return .Raw
+        }
+    }
+    
+    var contentType: NetworkRequestRawContentType {
+        
+        get {
+            
+            return .JSON
+        }
+    }
+    
 }
