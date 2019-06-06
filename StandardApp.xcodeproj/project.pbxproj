@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B1D633FA25B331C524FFE29 /* Pods_StandardAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605F2BA5D28CC88CF6B5FD0C /* Pods_StandardAppTests.framework */; };
+		0C0390672293665B005D35DC /* DispatcherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0390662293665B005D35DC /* DispatcherController.swift */; };
 		0C0DB2F92281E13E000FE340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0DB2F82281E13E000FE340 /* AppDelegate.swift */; };
-		0C0DB2FB2281E13E000FE340 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0DB2FA2281E13E000FE340 /* LoginViewController.swift */; };
+		0C0DB2FB2281E13E000FE340 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0DB2FA2281E13E000FE340 /* SigninViewController.swift */; };
 		0C0DB2FE2281E13E000FE340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0DB2FC2281E13E000FE340 /* Main.storyboard */; };
 		0C0DB3002281E140000FE340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0DB2FF2281E140000FE340 /* Assets.xcassets */; };
 		0C0DB3032281E140000FE340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0DB3012281E140000FE340 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,27 @@
 		0C1D773622823BE100C82142 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D773522823BE100C82142 /* AppModule.swift */; };
 		0C1D773C22834CC500C82142 /* NetworkRequestMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D773B22834CC500C82142 /* NetworkRequestMessage.swift */; };
 		0C1D773E22837D0600C82142 /* NetworkSessionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D773D22837D0600C82142 /* NetworkSessionClient.swift */; };
+		0C22CA7B228A2A7F00F411DD /* SignupUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22CA7A228A2A7F00F411DD /* SignupUserRequest.swift */; };
+		0C22CA7D228A2B6500F411DD /* SigninUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22CA7C228A2B6500F411DD /* SigninUserRequest.swift */; };
+		0C22CA80228A2D6A00F411DD /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22CA7F228A2D6A00F411DD /* CustomError.swift */; };
+		0C22CA83228B7CB100F411DD /* SignupRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22CA82228B7CB100F411DD /* SignupRepositoryError.swift */; };
+		0C22CA85228B81F700F411DD /* SigninRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22CA84228B81F700F411DD /* SigninRepositoryError.swift */; };
+		0C22CA87228CAD4400F411DD /* SignupUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22CA86228CAD4400F411DD /* SignupUseCase.swift */; };
+		0C22CA89228CAE0900F411DD /* SigninPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22CA88228CAE0900F411DD /* SigninPresenter.swift */; };
+		0C22CA8B228CBFAA00F411DD /* SigninUseCaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22CA8A228CBFAA00F411DD /* SigninUseCaseError.swift */; };
+		0C22CA8F228CC92000F411DD /* Tunes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C22CA8E228CC92000F411DD /* Tunes.storyboard */; };
+		0C22CA91228DFC6100F411DD /* SignupUseCaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22CA90228DFC6100F411DD /* SignupUseCaseError.swift */; };
+		0C3F571C228A0939006C531E /* UITextFieldIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F571B228A0939006C531E /* UITextFieldIndicator.swift */; };
+		0C3F5722228A2344006C531E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C3F5721228A22BA006C531E /* GoogleService-Info.plist */; };
+		0C8AABB2228E1C97002F4118 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AABB1228E1C95002F4118 /* SignupPresenter.swift */; };
+		0CBACB8D22987B7200E7AB5A /* SigninViewControllerPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBACB8C22987B7200E7AB5A /* SigninViewControllerPort.swift */; };
+		0CEAF16A22949B3D00608934 /* AlertableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEAF16922949B3D00608934 /* AlertableController.swift */; };
+		0CEAF16C2294BCE600608934 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEAF16B2294BCE600608934 /* BaseViewController.swift */; };
+		0CEE538A228F67A5000F0CC9 /* AuthModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE5389228F67A5000F0CC9 /* AuthModule.swift */; };
+		0CFC26A02289E05400E4BD9C /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC269F2289E05400E4BD9C /* FirebaseAuthService.swift */; };
+		0CFC26A22289E06200E4BD9C /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC26A12289E06200E4BD9C /* AuthRepository.swift */; };
+		0CFC26A42289E1BA00E4BD9C /* SigninUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC26A32289E1BA00E4BD9C /* SigninUseCase.swift */; };
+		0CFC26A6228A070700E4BD9C /* Credentials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFC26A5228A070700E4BD9C /* Credentials.storyboard */; };
 		0CFE7B9F2284BF2200C945F2 /* NetworkSessionRetroClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE7B9E2284BF2200C945F2 /* NetworkSessionRetroClient.swift */; };
 		0CFE7BA12284C29B00C945F2 /* NetworkResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE7BA02284C29B00C945F2 /* NetworkResponseCodable.swift */; };
 		0CFE7BA32284C2C900C945F2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE7BA22284C2C900C945F2 /* NetworkError.swift */; };
@@ -44,9 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0390662293665B005D35DC /* DispatcherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatcherController.swift; sourceTree = "<group>"; };
 		0C0DB2F52281E13E000FE340 /* StandardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C0DB2F82281E13E000FE340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C0DB2FA2281E13E000FE340 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0C0DB2FA2281E13E000FE340 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		0C0DB2FD2281E13E000FE340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C0DB2FF2281E140000FE340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C0DB3022281E140000FE340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +86,28 @@
 		0C1D773522823BE100C82142 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
 		0C1D773B22834CC500C82142 /* NetworkRequestMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestMessage.swift; sourceTree = "<group>"; };
 		0C1D773D22837D0600C82142 /* NetworkSessionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionClient.swift; sourceTree = "<group>"; };
+		0C22CA7A228A2A7F00F411DD /* SignupUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserRequest.swift; sourceTree = "<group>"; };
+		0C22CA7C228A2B6500F411DD /* SigninUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninUserRequest.swift; sourceTree = "<group>"; };
+		0C22CA7F228A2D6A00F411DD /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		0C22CA82228B7CB100F411DD /* SignupRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRepositoryError.swift; sourceTree = "<group>"; };
+		0C22CA84228B81F700F411DD /* SigninRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRepositoryError.swift; sourceTree = "<group>"; };
+		0C22CA86228CAD4400F411DD /* SignupUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUseCase.swift; sourceTree = "<group>"; };
+		0C22CA88228CAE0900F411DD /* SigninPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPresenter.swift; sourceTree = "<group>"; };
+		0C22CA8A228CBFAA00F411DD /* SigninUseCaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninUseCaseError.swift; sourceTree = "<group>"; };
+		0C22CA8E228CC92000F411DD /* Tunes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tunes.storyboard; sourceTree = "<group>"; };
+		0C22CA90228DFC6100F411DD /* SignupUseCaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUseCaseError.swift; sourceTree = "<group>"; };
+		0C3F571B228A0939006C531E /* UITextFieldIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextFieldIndicator.swift; path = ../UITextFieldIndicator.swift; sourceTree = "<group>"; };
+		0C3F5721228A22BA006C531E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C3F5723228A247E006C531E /* StandardApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StandardApp.entitlements; sourceTree = "<group>"; };
+		0C8AABB1228E1C95002F4118 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignupPresenter.swift; path = ../SignupPresenter.swift; sourceTree = "<group>"; };
+		0CBACB8C22987B7200E7AB5A /* SigninViewControllerPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewControllerPort.swift; sourceTree = "<group>"; };
+		0CEAF16922949B3D00608934 /* AlertableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertableController.swift; sourceTree = "<group>"; };
+		0CEAF16B2294BCE600608934 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0CEE5389228F67A5000F0CC9 /* AuthModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModule.swift; sourceTree = "<group>"; };
+		0CFC269F2289E05400E4BD9C /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		0CFC26A12289E06200E4BD9C /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		0CFC26A32289E1BA00E4BD9C /* SigninUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninUseCase.swift; sourceTree = "<group>"; };
+		0CFC26A5228A070700E4BD9C /* Credentials.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credentials.storyboard; sourceTree = "<group>"; };
 		0CFE7B9E2284BF2200C945F2 /* NetworkSessionRetroClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionRetroClient.swift; sourceTree = "<group>"; };
 		0CFE7BA02284C29B00C945F2 /* NetworkResponseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseCodable.swift; sourceTree = "<group>"; };
 		0CFE7BA22284C2C900C945F2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -105,6 +150,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C039065229365EC005D35DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C0390662293665B005D35DC /* DispatcherController.swift */,
+				0CEAF16922949B3D00608934 /* AlertableController.swift */,
+				0CEAF16B2294BCE600608934 /* BaseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		0C0DB2EC2281E13D000FE340 = {
 			isa = PBXGroup;
 			children = (
@@ -131,11 +186,13 @@
 		0C0DB2F72281E13E000FE340 /* StandardApp */ = {
 			isa = PBXGroup;
 			children = (
+				0C3F5723228A247E006C531E /* StandardApp.entitlements */,
 				0C1D77342282383800C82142 /* Frameworks */,
 				0C1D77332282381A00C82142 /* Adapters */,
 				0C1D77322282380C00C82142 /* UseCases */,
 				0C1D772D2282354C00C82142 /* Resources */,
 				0C0DB2F82281E13E000FE340 /* AppDelegate.swift */,
+				0C3F5721228A22BA006C531E /* GoogleService-Info.plist */,
 				0C0DB3042281E140000FE340 /* Info.plist */,
 			);
 			path = StandardApp;
@@ -172,23 +229,27 @@
 		0C1D772A228234C400C82142 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0C1D772B228234EF00C82142 /* Login */,
+				0C039065229365EC005D35DC /* Controller */,
+				0C3F5725228A2653006C531E /* View */,
+				0C1D772B228234EF00C82142 /* Auth */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		0C1D772B228234EF00C82142 /* Login */ = {
+		0C1D772B228234EF00C82142 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				0C0DB2FA2281E13E000FE340 /* LoginViewController.swift */,
+				0C0DB2FA2281E13E000FE340 /* SigninViewController.swift */,
+				0CBACB8C22987B7200E7AB5A /* SigninViewControllerPort.swift */,
 			);
-			path = Login;
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		0C1D772C2282351B00C82142 /* DI */ = {
 			isa = PBXGroup;
 			children = (
 				0C1D773522823BE100C82142 /* AppModule.swift */,
+				0CEE5389228F67A5000F0CC9 /* AuthModule.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -206,7 +267,9 @@
 			isa = PBXGroup;
 			children = (
 				0C0DB2FC2281E13E000FE340 /* Main.storyboard */,
+				0C22CA8D228CC8B200F411DD /* Home */,
 				0C0DB3012281E140000FE340 /* LaunchScreen.storyboard */,
+				0C22CA8C228CC8AB00F411DD /* Auth */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -214,6 +277,7 @@
 		0C1D772F228235B500C82142 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				0CFC269A2289DF0B00E4BD9C /* Auth */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -221,6 +285,7 @@
 		0C1D7730228235EA00C82142 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0CFC269C2289DF2000E4BD9C /* Auth */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -245,6 +310,7 @@
 		0C1D77342282383800C82142 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C22CA81228B77C200F411DD /* Entities */,
 				0C1D7737228345C400C82142 /* Network */,
 				0C1D772C2282351B00C82142 /* DI */,
 				0C1D7730228235EA00C82142 /* Data */,
@@ -267,8 +333,82 @@
 		0C1D7738228345E100C82142 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0CFC26992289DF0200E4BD9C /* Auth */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0C22CA7E228A2D3000F411DD /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				0C22CA7F228A2D6A00F411DD /* CustomError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		0C22CA81228B77C200F411DD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0C22CA7E228A2D3000F411DD /* Error */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0C22CA8C228CC8AB00F411DD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0CFC26A5228A070700E4BD9C /* Credentials.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0C22CA8D228CC8B200F411DD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0C22CA8E228CC92000F411DD /* Tunes.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0C3F5725228A2653006C531E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C3F571B228A0939006C531E /* UITextFieldIndicator.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CFC26992289DF0200E4BD9C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0C8AABB1228E1C95002F4118 /* SignupPresenter.swift */,
+				0C22CA88228CAE0900F411DD /* SigninPresenter.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0CFC269A2289DF0B00E4BD9C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0CFC26A32289E1BA00E4BD9C /* SigninUseCase.swift */,
+				0C22CA8A228CBFAA00F411DD /* SigninUseCaseError.swift */,
+				0C22CA86228CAD4400F411DD /* SignupUseCase.swift */,
+				0C22CA90228DFC6100F411DD /* SignupUseCaseError.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0CFC269C2289DF2000E4BD9C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0CFC269F2289E05400E4BD9C /* FirebaseAuthService.swift */,
+				0CFC26A12289E06200E4BD9C /* AuthRepository.swift */,
+				0C22CA7A228A2A7F00F411DD /* SignupUserRequest.swift */,
+				0C22CA7C228A2B6500F411DD /* SigninUserRequest.swift */,
+				0C22CA82228B7CB100F411DD /* SignupRepositoryError.swift */,
+				0C22CA84228B81F700F411DD /* SigninRepositoryError.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		547BF1E8F369347FB8246581 /* Frameworks */ = {
@@ -367,6 +507,11 @@
 				TargetAttributes = {
 					0C0DB2F42281E13E000FE340 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					0C0DB3082281E140000FE340 = {
 						CreatedOnToolsVersion = 10.1;
@@ -403,8 +548,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3F5722228A2344006C531E /* GoogleService-Info.plist in Resources */,
+				0CFC26A6228A070700E4BD9C /* Credentials.storyboard in Resources */,
 				0C0DB3032281E140000FE340 /* LaunchScreen.storyboard in Resources */,
 				0C0DB3002281E140000FE340 /* Assets.xcassets in Resources */,
+				0C22CA8F228CC92000F411DD /* Tunes.storyboard in Resources */,
 				0C1D77282281FA2F00C82142 /* Matchfile in Resources */,
 				0C0DB2FE2281E13E000FE340 /* Main.storyboard in Resources */,
 			);
@@ -520,8 +668,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StandardApp/Pods-StandardApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${PODS_ROOT}/GirdersSwift/framework/GRSecurity.framework",
 				"${BUILT_PRODUCTS_DIR}/GirdersSwift/GirdersSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
@@ -529,13 +679,16 @@
 				"${BUILT_PRODUCTS_DIR}/RxRetroSwift/RxRetroSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRSecurity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GirdersSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
@@ -543,6 +696,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRetroSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -556,14 +710,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0DB2FB2281E13E000FE340 /* LoginViewController.swift in Sources */,
+				0C0390672293665B005D35DC /* DispatcherController.swift in Sources */,
+				0C0DB2FB2281E13E000FE340 /* SigninViewController.swift in Sources */,
+				0C22CA80228A2D6A00F411DD /* CustomError.swift in Sources */,
+				0CBACB8D22987B7200E7AB5A /* SigninViewControllerPort.swift in Sources */,
+				0C22CA89228CAE0900F411DD /* SigninPresenter.swift in Sources */,
+				0C22CA85228B81F700F411DD /* SigninRepositoryError.swift in Sources */,
 				0CFE7BA32284C2C900C945F2 /* NetworkError.swift in Sources */,
 				0CFE7B9F2284BF2200C945F2 /* NetworkSessionRetroClient.swift in Sources */,
 				0CFE7BA12284C29B00C945F2 /* NetworkResponseCodable.swift in Sources */,
 				0C1D773C22834CC500C82142 /* NetworkRequestMessage.swift in Sources */,
+				0C22CA83228B7CB100F411DD /* SignupRepositoryError.swift in Sources */,
+				0C22CA7B228A2A7F00F411DD /* SignupUserRequest.swift in Sources */,
+				0CEAF16A22949B3D00608934 /* AlertableController.swift in Sources */,
+				0C8AABB2228E1C97002F4118 /* SignupPresenter.swift in Sources */,
+				0CEAF16C2294BCE600608934 /* BaseViewController.swift in Sources */,
+				0CFC26A42289E1BA00E4BD9C /* SigninUseCase.swift in Sources */,
 				0C0DB2F92281E13E000FE340 /* AppDelegate.swift in Sources */,
+				0CFC26A22289E06200E4BD9C /* AuthRepository.swift in Sources */,
+				0CFC26A02289E05400E4BD9C /* FirebaseAuthService.swift in Sources */,
+				0C22CA8B228CBFAA00F411DD /* SigninUseCaseError.swift in Sources */,
+				0C22CA91228DFC6100F411DD /* SignupUseCaseError.swift in Sources */,
+				0C22CA7D228A2B6500F411DD /* SigninUserRequest.swift in Sources */,
 				0C1D773622823BE100C82142 /* AppModule.swift in Sources */,
+				0C22CA87228CAD4400F411DD /* SignupUseCase.swift in Sources */,
 				0C1D773E22837D0600C82142 /* NetworkSessionClient.swift in Sources */,
+				0CEE538A228F67A5000F0CC9 /* AuthModule.swift in Sources */,
+				0C3F571C228A0939006C531E /* UITextFieldIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,8 +912,9 @@
 			baseConfigurationReference = 4A38BBB9CA95ECED70CEDD14 /* Pods-StandardApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StandardApp/StandardApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 2H7JJNVPU3;
 				INFOPLIST_FILE = StandardApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -760,8 +934,9 @@
 			baseConfigurationReference = 6A8F9271D24428DE639491F2 /* Pods-StandardApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StandardApp/StandardApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 2H7JJNVPU3;
 				INFOPLIST_FILE = StandardApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -8,6 +8,9 @@ def private_pods
     pod 'GirdersSwift'
     pod 'RxSwift'
     pod 'RxRetroSwift'
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+
 end
 
 target 'StandardApp' do

@@ -12,25 +12,36 @@ import RxSwift
 
 class NetworkSessionRetroClient: NetworkSessionClient {
     
-    private let caller = RequestCaller(config: URLSessionConfiguration.default)
+    private let caller: RequestCaller
     private let disposeBag = DisposeBag()
+    private let baseUrl = ""
     
+    override init() {
+        
+        let config = URLSessionConfiguration.default
+        if #available(iOS 11.0, *) {
+            config.waitsForConnectivity = true
+        }
+        
+        self.caller = RequestCaller(config: config)
+    }
+        
     func GET<T: NetworkResponseCodable, E: NetworkError>(request: NetworkRequestMessage, completion: @escaping (Result<T?, E>) -> ()) {
        
         let request:URLRequest = RequestModel(
             httpMethod: .get,
             path: request.path!,
-            baseUrl: "",
-            query: [:],
+            baseUrl: (request.baseURL ?? self.baseUrl),
+            query: request.parameters,
             payload: [:],
             headers: [:]
             ).asURLRequest()
         
-        let observable: Observable<Result<T, NetworkError>> = caller.call(request)
+        let observable: Observable<Result<T, E>> = caller.call(request)
         
         observable.subscribe(onNext: { (result) in
             
-            if let error = result.error as? E {
+            if let error = result.error {
                 
                 completion(.failure(error))
             }

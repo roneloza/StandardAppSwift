@@ -8,24 +8,21 @@
 
 import Foundation
 import GirdersSwift
-import RxRetroSwift
-import RxSwift
 
 class AppModule: NSObject {
+  
+  static func injectDependencies() {
     
-    func doRequestNetwork() {
-        
-        let caller = RequestCaller(config: URLSessionConfiguration.default)
-    }
-    
-    static func injectDependencies() {
-        
-//        Container.addSingleton { () -> PDFService in
-//            if #available(iOS 11, *) {
-//                return PDFKitService()
-//            } else {
-//                return CGPDFService()
-//            }
-//        }
-    }
+    AuthModule.injectSignupUseCase()
+    AuthModule.injectAuthRepository()
+    AuthModule.injectSignupPresenter()
+  }
+  
+//  static func injectNetworkSessionClient() {
+//    
+//    Container.addPerRequest { () -> NetworkSessionClient in
+//      
+//      return NetworkSessionRetroClient()
+//    }
+//  }
 }

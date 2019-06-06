@@ -65,7 +65,10 @@ platform :ios do
         
         increment_build_number
         build_number = get_build_number
-        version = get_version_number
+        version = get_version_number(
+                                     target: "#{project_target_debug}",
+                                     xcodeproj: "#{xcodeproj}"
+                                     )
         
         formerVersion = "#{version}-b#{formerNumber}"
         commitVersion = "#{version}-b#{build_number}"
